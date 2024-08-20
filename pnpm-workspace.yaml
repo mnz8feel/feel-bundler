@@ -1,5 +1,5 @@
 packages:
   - 'farm'
-  - 'mako'
+  - 'rsbuild'
   - 'rspack'
   - 'vite'
