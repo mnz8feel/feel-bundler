@@ -1,8 +1,8 @@
 pnpm create farm
 
-pnpm create mako
-
 pnpm create rsbuild@latest
+
+pnpm create rspack@latest
 
 pnpm create vite
 
@@ -11,6 +11,8 @@ pnpm create vite
 turbopack
 
 rolldown for vite
+
+mako not on windows
 
 ## legend
 
