@@ -1,10 +1,33 @@
+import { useState } from 'react';
+import reactLogo from './assets/react.svg';
+import rsbuildLogo from '../public/rsbuild-logo.svg';
 import './App.css';
 
 const App = () => {
+  const [count, setCount] = useState(0);
+
   return (
-    <div className="content">
-      <h1>Rsbuild with React</h1>
-      <p>Start building amazing things with Rsbuild.</p>
+    <div className="App">
+      <div>
+        <a href="https://rsbuild.dev" target="_blank" rel="noreferrer">
+          <img src={rsbuildLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://reactjs.org" target="_blank" rel="noreferrer">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <h1>Rsbuild + React + TypeScript</h1>
+      <div className="card">
+        <button type="button" onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.tsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the Rsbuild and React logos to learn more
+      </p>
     </div>
   );
 };
